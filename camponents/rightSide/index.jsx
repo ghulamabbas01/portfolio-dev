@@ -9,7 +9,7 @@ import { ManuBar } from "../config";
 
 const index = () => {
   return (
-    <Stack spacing={5.5}>
+    <Stack spacing={5.6}>
       {ManuBar.map((data) => (
         <Tooltip title={data.name} placement="top" arrow>
           <Link href={`${data.HomeUrl}`}>
