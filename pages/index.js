@@ -25,7 +25,7 @@ export default function Home() {
         <Grid item md={8} xs={12} className="px-4 z-50">
           <Main />
         </Grid>
-        <Grid item md={1} className="right-sidebar-minu -z-40 ">
+        <Grid item md={1} className="right-sidebar-minu">
           <RightManuBar />
         </Grid>
       </Grid>

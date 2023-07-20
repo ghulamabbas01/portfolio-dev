@@ -56,6 +56,10 @@ scroll-behavior: smooth!important;
   justify-content: center;
   align-items: center;
   height: 100vh;
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 100%;
 }
 
 .MuiTooltip-tooltip{
@@ -181,3 +185,4 @@ background-color: #FFB400;
 background-color: #F0F0F6;
 outline: none;
 }
+

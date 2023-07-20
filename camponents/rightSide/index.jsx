@@ -9,7 +9,7 @@ import { ManuBar } from "../config";
 
 const index = () => {
   return (
-    <Stack className="fixed top-0 right-10  md:flex sm:flex-none items-center ">
+    <Stack sx={{ display: { xs: "none", md: "flex" } }}>
       {ManuBar.map((data) => (
         <Tooltip title={data.name} placement="top" arrow>
           <Link href={`${data.link}`}>

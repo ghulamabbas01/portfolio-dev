@@ -11,7 +11,7 @@ const Education = () => {
     <>
       {/* Education main heading  */}
       <Stack
-        className="mx-auto text-center  items-center"
+        className="mx-auto text-center items-center"
         spacing={2}
         id="Education">
         <Typography variant="h2" className="font-semibold text-4xl">
