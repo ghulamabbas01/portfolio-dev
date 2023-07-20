@@ -2,6 +2,11 @@
 @tailwind components;
 @tailwind utilities;
 
+html {
+--scroll-behavior: smooth!important;
+scroll-behavior: smooth!important;
+}
+
 :root {
   background: var(--background, #F0F0F6);
   font-family: 'Poppins', sans-serif;
@@ -18,24 +23,20 @@
   background-color: #1f2937;
   color: #f3f4f6;
 }
-
-
+/* right sidebar css start */
 .left-side-minu{
   background: var(--white, #FFF);
+  height: 1562px;
 }
-
 .right-sidebar-Main-Box{
   padding: 50px 45px 50px 45px;
-  height: 1315px;
   display: flex;
   flex-direction: column;
   align-items: center;
   overflow: hidden;
   text-align: center;
   white-space: nowrap;
-
 }
-
 .social-Icon{
   width: 24px;
   height: 24px;
@@ -45,19 +46,138 @@
   justify-content: center;
   align-items: center;
 }
+/* left sidebar css end */
 
 
+/* right sidebar css start */
 .right-sidebar-minu{
   background: var(--white, #FFF);
   display: flex;
   justify-content: center;
-  padding: 50px 0px 25px 0px;
+  align-items: center;
+  height: 100vh;
 }
 
 .MuiTooltip-tooltip{
   background-color: black;
-}
+
+  }
+  .MuiTooltip-popper[data-popper-placement*="top"] .css-1k51tf5-MuiTooltip-tooltip{
+   margin-bottom: 4px;
+  }
 .MuiTooltip-arrow{
   color: black;
+}
+/* right sidebar css end  */
 
+
+/* ---------------------  main component css end  ---------------------*/
+
+
+/* hero component css start  */
+.Hero-component{
+  background: var(--white, #FFF);
+  display: flex;
+  position: relative;
+  flex-direction: column;
+  justify-content: center !important;
+  align-items: center !important;
+  width: 100%;
+  padding: 0px 60px;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+}
+
+.Hero-component::after{
+  content: "";
+  background-image: url("/main-imgaes/Ellipse-12.svg");
+  width: 22px;
+  height: 22px;
+  position: absolute;
+  right: 92%;
+  top: 88%;
+}
+.Hero-component::before{
+  content: "";
+  background-image: url("/main-imgaes/Ellipse-15.svg");
+  width: 22px;
+  height: 22px;
+  position: absolute;
+  top: 5%;
+  left: 10%;
+}
+.profile-img::after{
+  content: "";
+  background-image: url("/main-imgaes/Polygon-1.svg");
+  width: 22px;
+  height: 22px;
+  position: absolute;
+  top: 18%;
+  left: 54%;
+  transform: rotateZ(45deg);
+}
+.profile-img::before{
+  content: "";
+  background-image: url("/main-imgaes/Rectangle-3.svg");
+  width: 30px;
+  height: 30px;
+  position: absolute;
+  left: 90%;
+  top: 30%;
+}
+
+.profile-text::after{
+    content: "";
+    background-image: url("/main-imgaes/Rectangle-2.svg");
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    top: 64%;
+    left: 40%;
+}
+.profile-text::before{
+  content: "";
+  background-image: url("/main-imgaes/Ellipse-15.svg");
+  width: 22px;
+  height: 22px;
+  position: absolute;
+  top: 85%;
+  left: 60%;
+}
+/* hero component css end  */
+/* Testimonial css start  */
+.slick-track{
+    display: flex ;
+    gap: 12px ;
+}
+
+.slick-dots li.slick-active button:before{
+  color: #FFB400;
+}
+/* Testimonial css end  */
+/* uiDesign css start  */
+.MuiTabs-indicator{
+  background-color: #FFB400;
+}
+.css-1h9z7r5-MuiButtonBase-root-MuiTab-root.Mui-selected{
+  color: #FFB400;
+}
+.ui-main-box-text{
+  display: none;
+}
+.ui-main-box-text{
+background-color: #FFB400;
+  transition: all 1s ease !important;
+}
+.ui-main-box:hover .ui-main-box-text{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  transition: all 3s ease !important;
+
+}
+
+.input{
+background-color: #F0F0F6;
+outline: none;
 }

@@ -9,6 +9,8 @@ import { soialIcon } from "../config";
 import Languages from "./Languages";
 import Status from "./Status";
 import Skills from "./Skills";
+import ExtraSkills from "./ExtraSkills";
+import DownloadCV from "./DownloadCV";
 
 const RightSidebar = () => {
   return (
@@ -16,13 +18,13 @@ const RightSidebar = () => {
       <Box className="right-sidebar-Main-Box ">
         <Box className="relative w-[150px] h-[150px] bg-slate-200 rounded-full  ">
           <Image
-            src="/right-sidebar-images/profile-pic.png"
+            src="/left-sidebar-images/Profile.svg"
             alt="Profil"
             layout="fill"
           />
           <Box
             component="span"
-            className="onlineDote absolute w-3 h-3 bg-[#7EB942] rounded-full right-2 top-28"
+            className="onlineDote absolute w-3 h-3 bg-[#7EB942] rounded-full right-1 top-28"
           />
         </Box>
         <Stack spacing={2} className="mt-8">
@@ -33,8 +35,7 @@ const RightSidebar = () => {
             </Typography>
             <Typography
               variant="h6"
-              className="color-[#767676] font-light text-[15px] mt-1"
-            >
+              className="color-[#767676] font-light text-[15px] mt-1">
               Front End Developer
             </Typography>
           </Box>
@@ -42,14 +43,14 @@ const RightSidebar = () => {
           {/* if you add a your own social link edit the config,js file */}
           <Box className="flex items-center gap-4 pb-5">
             {soialIcon.map((data) => (
-              <Link
-                href={`${data.facebookUrl}`}
-                className="social-Icon"
-                target="_blank"
-                key={data.id}
-              >
-                <Image src={data.Image} alt="Profil" width={14} height={14} />
-              </Link>
+              <Box key={data.id}>
+                <Link
+                  href={`${data.facebookUrl}`}
+                  className="social-Icon"
+                  target="_blank">
+                  <Image src={data.Image} alt="Profil" width={14} height={14} />
+                </Link>
+              </Box>
             ))}
           </Box>
           {/* social Link add thorw the config file  */}
@@ -72,6 +73,18 @@ const RightSidebar = () => {
             <Skills />
           </Stack>
           {/* Skills component end */}
+          <hr className="text-[#F0F0F6]" />
+          {/* Extra Skills component start */}
+          <Stack spacing={2} className="pb-6 pt-6 text-left">
+            <ExtraSkills />
+          </Stack>
+          {/* Extra Skills component end */}
+          <hr className="text-[#F0F0F6]" />
+          {/* Download CV component start */}
+          <Stack spacing={2} className="pb-6 pt-6 text-left">
+            <DownloadCV />
+          </Stack>
+          {/* Download CV  component end */}
           <hr className="text-[#F0F0F6]" />
         </Stack>
       </Box>

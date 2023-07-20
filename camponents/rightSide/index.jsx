@@ -9,11 +9,11 @@ import { ManuBar } from "../config";
 
 const index = () => {
   return (
-    <Stack spacing={5.6}>
+    <Stack className="fixed top-0 right-0  md:flex sm:flex-none items-center ">
       {ManuBar.map((data) => (
         <Tooltip title={data.name} placement="top" arrow>
-          <Link href={`${data.HomeUrl}`}>
-            <Box className="bg-[#FFB400] hover:bg-[#c7941e] rounded-full w-10 h-10 flex items-center justify-center gap-5">
+          <Link href={`${data.link}`}>
+            <Box className="bg-[#FFB400] hover:bg-[#c7941e] rounded-full w-10 h-10 flex items-center justify-center my-5 ">
               <Image src={data.Image} alt="Profil" width={18} height={18} />
             </Box>
           </Link>
