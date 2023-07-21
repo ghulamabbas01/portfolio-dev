@@ -196,8 +196,8 @@ body{
 .MuiTabs-indicator{
   background-color: #FFB400 !important;
 }
-.css-1h9z7r5-MuiButtonBase-root-MuiTab-root.Mui-selected{
-  color: #FFB400 !important;
+.MuiButtonBase-root{
+  color: #353532 !important;
 }
 .ui-main-box-text{
   display: none;
