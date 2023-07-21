@@ -17,7 +17,7 @@ const Languages = () => {
           </Box>
           <Box className="w-full border border-[#FFB400] h-1 rounded  ">
             <div
-              class="progress-bar bg-[#FFB400] w-[100%] h-[2px] rounded"
+              className="progress-bar bg-[#FFB400] w-[100%] h-[2px] rounded"
               aria-valuemax="100"
             />
           </Box>
@@ -31,7 +31,7 @@ const Languages = () => {
           </Box>
           <Box className="w-full border border-[#FFB400] h-1 rounded  ">
             <div
-              class="progress-bar bg-[#FFB400] w-[70%] h-[2px] rounded"
+              className="progress-bar bg-[#FFB400] w-[70%] h-[2px] rounded"
               aria-valuemax="70"
             />
           </Box>
@@ -45,7 +45,7 @@ const Languages = () => {
           </Box>
           <Box className="w-full border border-[#FFB400] h-1 rounded  ">
             <div
-              class="progress-bar bg-[#FFB400] w-[80%] h-[2px] rounded"
+              className="progress-bar bg-[#FFB400] w-[80%] h-[2px] rounded"
               aria-valuemax="80"
             />
           </Box>

@@ -57,30 +57,30 @@ const Testimonial = () => {
         </Typography>
       </Stack>
       <Slider {...settings}>
-        {TestimonialData.map((data) => (
+        {TestimonialData?.map((data) => (
           <Stack
             spacing={4}
             className="bg-white p-5 border-[1px]"
-            key={data.id}>
+            key={data?.id}>
             <Stack spacing={1.5}>
-              <Rating defaultValue={`${data.star}`} size="large" />
+              <Rating size="large" />
               <Typography variant="h4" className="text-[18px] font-[500]">
-                {data.work}
+                {data?.work}
               </Typography>
               <Typography variant="body1" className="text-[#767676]">
-                {data.description}
+                {data?.description}
               </Typography>
             </Stack>
             <Stack className="flex-row items-center gap-6">
-              <Avatar src={data.avatar} alt="avatar" className="w-20 h-20" />
+              <Avatar src={data?.avatar} alt="avatar" className="w-20 h-20" />
               <Box>
                 <Typography
                   variant="h4"
                   className="text-[18px] font-[500] mb-1">
-                  {data.name}
+                  {data?.name}
                 </Typography>
                 <Typography variant="body1" className="text-[#767676]">
-                  {data.profaction}
+                  {data?.profaction}
                 </Typography>
               </Box>
             </Stack>

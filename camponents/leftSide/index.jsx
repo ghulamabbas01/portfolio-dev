@@ -42,13 +42,18 @@ const RightSidebar = () => {
           {/* social Link add thorw the config file  */}
           {/* if you add a your own social link edit the config,js file */}
           <Box className="flex items-center gap-4 pb-5">
-            {soialIcon.map((data) => (
-              <Box key={data.id}>
+            {soialIcon?.map((data) => (
+              <Box key={data?.id}>
                 <Link
-                  href={`${data.facebookUrl}`}
+                  href={`${data?.facebookUrl}`}
                   className="social-Icon"
                   target="_blank">
-                  <Image src={data.Image} alt="Profil" width={14} height={14} />
+                  <Image
+                    src={data?.Image}
+                    alt="Profil"
+                    width={14}
+                    height={14}
+                  />
                 </Link>
               </Box>
             ))}

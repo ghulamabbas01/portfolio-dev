@@ -42,7 +42,6 @@ export const PricingData = [
   {
     id: "1",
     name: "Silver",
-
     price: "$10.00",
     description: "For most businesses that want to optimize web queries",
     button: "Order Now",

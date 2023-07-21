@@ -39,7 +39,7 @@ export default function MobileDrawer() {
 
   return (
     <div>
-      {["left"].map((anchor) => (
+      {["left"]?.map((anchor) => (
         <React.Fragment key={anchor}>
           <DehazeIcon
             onClick={toggleDrawer(anchor, true)}

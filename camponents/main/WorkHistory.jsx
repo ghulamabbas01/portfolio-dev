@@ -27,22 +27,22 @@ const WorkHistory = () => {
       <Box className="bg-white p-8 flex flex-col justify-center items-center ">
         <Grid container>
           <Grid item xs={12}>
-            {WorkHistoryData.map((data) => (
-              <>
+            {WorkHistoryData?.map((data) => (
+              <Box key={data?.id}>
                 <Grid container>
                   <Grid item xs={12} md={4} className="bg-white">
-                    <Stack spacing={2} className="p-4" key={data?.id}>
+                    <Stack spacing={2} className="p-4">
                       <Typography
                         variant="h4"
                         className="text-[18px] font-[500]">
-                        {data.UniversityName}
+                        {data?.UniversityName}
                       </Typography>
                       <Typography variant="body1" className="">
-                        {data.profaction}
+                        {data?.profaction}
                         <Box
                           component="span"
                           className="px-2 ml-2 text-white bg-[#FFB400]">
-                          {data.date}
+                          {data?.date}
                         </Box>
                       </Typography>
                     </Stack>
@@ -52,16 +52,16 @@ const WorkHistory = () => {
                       <Typography
                         variant="h4"
                         className="text-[18px] font-[500]">
-                        {data.field}
+                        {data?.field}
                       </Typography>
                       <Typography variant="body1" className="">
-                        {data.description}
+                        {data?.description}
                       </Typography>
                     </Stack>
                   </Grid>
                 </Grid>
                 <Divider light />
-              </>
+              </Box>
             ))}
           </Grid>
         </Grid>

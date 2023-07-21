@@ -39,10 +39,10 @@ export default function MobileManu() {
       onKeyDown={toggleDrawer(anchor, false)}>
       <List>
         <Stack justifyContent="center" alignItems="center">
-          {ManuBar.map((data) => (
-            <Link href={`${data.link}`}>
+          {ManuBar?.map((data) => (
+            <Link href={`${data?.link}`} key={data?.id}>
               <Box className="bg-[#FFB400] hover:bg-[#c7941e] rounded-full w-10 h-10 flex items-center justify-center my-5 ">
-                <Image src={data.Image} alt="Profil" width={18} height={18} />
+                <Image src={data?.Image} alt="Profil" width={18} height={18} />
               </Box>
             </Link>
           ))}
@@ -53,7 +53,7 @@ export default function MobileManu() {
 
   return (
     <div>
-      {["right"].map((anchor) => (
+      {["right"]?.map((anchor) => (
         <React.Fragment key={anchor}>
           <DehazeIcon
             onClick={toggleDrawer(anchor, true)}

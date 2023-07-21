@@ -6,7 +6,6 @@ import { Box, Typography, Stack } from "@mui/material";
 
 const Skills = () => {
   return (
-    
     <Box>
       {/* Add your skills here */}
       <Typography variant="h6">Skills</Typography>
@@ -19,7 +18,7 @@ const Skills = () => {
           </Box>
           <Box className="w-full border border-[#FFB400] h-[4px] rounded  ">
             <div
-              class="progress-bar bg-[#FFB400] w-[90%] h-[2px] rounded"
+              className="progress-bar bg-[#FFB400] w-[90%] h-[2px] rounded"
               aria-valuemax="90"
             />
           </Box>
@@ -33,7 +32,7 @@ const Skills = () => {
           </Box>
           <Box className="w-full border border-[#FFB400] h-1 rounded  ">
             <div
-              class="progress-bar bg-[#FFB400] w-[90%] h-[2px] rounded"
+              className="progress-bar bg-[#FFB400] w-[90%] h-[2px] rounded"
               aria-valuemax="90"
             />
           </Box>
@@ -47,7 +46,7 @@ const Skills = () => {
           </Box>
           <Box className="w-full border border-[#FFB400] h-1 rounded  ">
             <div
-              class="progress-bar bg-[#FFB400] w-[70%] h-[2px] rounded"
+              className="progress-bar bg-[#FFB400] w-[70%] h-[2px] rounded"
               aria-valuemax="70"
             />
           </Box>
@@ -61,7 +60,7 @@ const Skills = () => {
           </Box>
           <Box className="w-full border border-[#FFB400] h-1 rounded  ">
             <div
-              class="progress-bar bg-[#FFB400] w-[90%] h-[2px] rounded"
+              className="progress-bar bg-[#FFB400] w-[90%] h-[2px] rounded"
               aria-valuemax="90"
             />
           </Box>
@@ -75,7 +74,7 @@ const Skills = () => {
           </Box>
           <Box className="w-full border border-[#FFB400] h-1 rounded  ">
             <div
-              class="progress-bar bg-[#FFB400] w-[50%] h-[2px] rounded"
+              className="progress-bar bg-[#FFB400] w-[50%] h-[2px] rounded"
               aria-valuemax="50"
             />
           </Box>

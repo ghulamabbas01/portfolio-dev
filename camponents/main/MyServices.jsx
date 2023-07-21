@@ -22,23 +22,22 @@ const MyServices = () => {
       </Stack>
       <Box className="md:mt-10 mt-5">
         <Grid container spacing={2}>
-          {MyServicesData.map((data) => (
-            <Grid item xs={6} md={4}>
+          {MyServicesData?.map((data) => (
+            <Grid item xs={6} md={4} key={data?.id}>
               <Stack
-                key={data.id}
                 className="bg-white py-7 px-3 justify-center items-center h-full"
                 spacing={3}>
                 <Image
-                  src={`${data.image}`}
+                  src={`${data?.image}`}
                   alt="coding"
                   width={68}
                   height={68}
                 />
                 <Stack spacing={1} className="text-center">
                   <Typography variant="h4" className="text-lg font-medium">
-                    {data.name}
+                    {data?.name}
                   </Typography>
-                  <Typography variant="body">{data.description}</Typography>
+                  <Typography variant="body">{data?.description}</Typography>
                 </Stack>
               </Stack>
             </Grid>

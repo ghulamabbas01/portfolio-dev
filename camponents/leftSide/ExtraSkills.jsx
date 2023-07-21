@@ -16,7 +16,8 @@ const ExtraSkills = () => {
               src="/left-sidebar-images/extraSkillIcons.svg"
               alt="extra skill"
               width={12}
-              height={12}></Image>
+              height={12}
+            />
           </Box>
           <Typography variant="body1">Bootstrap, Materialize</Typography>
         </Box>
@@ -27,29 +28,32 @@ const ExtraSkills = () => {
               src="/left-sidebar-images/extraSkillIcons.svg"
               alt="extra skill"
               width={12}
-              height={12}></Image>
+              height={12}
+            />
           </Box>
           <Typography variant="body1">Stylus, Sass, Less</Typography>
         </Box>
-         {/* Gulp, Webpack, Grunt */}
-         <Box className="flex items-center gap-2">
+        {/* Gulp, Webpack, Grunt */}
+        <Box className="flex items-center gap-2">
           <Box>
             <Image
               src="/left-sidebar-images/extraSkillIcons.svg"
               alt="extra skill"
               width={12}
-              height={12}></Image>
+              height={12}
+            />
           </Box>
           <Typography variant="body1">Gulp, Webpack, Grunt</Typography>
         </Box>
-         {/* GIT Knowledge */}
-         <Box className="flex items-center gap-2">
+        {/* GIT Knowledge */}
+        <Box className="flex items-center gap-2">
           <Box>
             <Image
               src="/left-sidebar-images/extraSkillIcons.svg"
               alt="extra skill"
               width={12}
-              height={12}></Image>
+              height={12}
+            />
           </Box>
           <Typography variant="body1">GIT Knowledge</Typography>
         </Box>

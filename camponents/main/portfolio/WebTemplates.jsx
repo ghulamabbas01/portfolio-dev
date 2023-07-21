@@ -34,20 +34,20 @@ const WebTemplates = () => {
     <>
       <Box>
         <Grid container spacing={2}>
-          {WebTemplatesData.map((data) => (
+          {WebTemplatesData?.map((data) => (
             <Grid item xs={6} md={4}>
               <Box
                 className="bg-white relative ui-main-box transition-all"
-                key={data.id}>
-                <Image src={data.image} alt="img" width={310} height={300} />
+                key={data?.id}>
+                <Image src={data?.image} alt="img" width={310} height={300} />
                 <Link
-                  href={`${data.projectLink}`}
+                  href={`${data?.projectLink}`}
                   className="ui-main-box-text py-3 absolute h-full w-full top-0 left-0 ">
                   <Typography variant="h6" className="">
-                    {data.projectName}
+                    {data?.projectName}
                   </Typography>
                   <Typography variant="body1">
-                    {data.smallDescription}
+                    {data?.smallDescription}
                   </Typography>
                 </Link>
               </Box>

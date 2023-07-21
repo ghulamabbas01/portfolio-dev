@@ -55,26 +55,24 @@ const UIDesign = () => {
     <>
       <Box>
         <Grid container spacing={2}>
-          {WorkHistoryData.map((data) => (
-            <Grid item xs={6} md={4}>
-              <Box
-                className="bg-white relative ui-main-box transition-all"
-                key={data.id}>
+          {WorkHistoryData?.map((data) => (
+            <Grid item xs={6} md={4} key={data?.id}>
+              <Box className="bg-white relative ui-main-box transition-all">
                 <Image
-                  src={data.image}
+                  src={data?.image}
                   alt="img"
                   width={310}
                   height={300}
                   className="transition-all "
                 />
                 <Link
-                  href={`${data.projectLink}`}
+                  href={`${data?.projectLink}`}
                   className="ui-main-box-text py-3 absolute h-full w-full top-0 left-0 ">
                   <Typography variant="h6" className="">
-                    {data.projectName}
+                    {data?.projectName}
                   </Typography>
                   <Typography variant="body1">
-                    {data.smallDescription}
+                    {data?.smallDescription}
                   </Typography>
                 </Link>
               </Box>
