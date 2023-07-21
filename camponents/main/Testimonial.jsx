@@ -46,7 +46,7 @@ const Testimonial = () => {
         className="mx-auto text-center  items-center"
         spacing={2}
         id="CustomerSay">
-        <Typography variant="h2" className="font-semibold text-4xl">
+        <Typography variant="h2" fontSize={36} fontWeight={600}>
           Recommendations
         </Typography>
         <Typography

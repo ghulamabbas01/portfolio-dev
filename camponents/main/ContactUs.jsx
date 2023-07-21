@@ -9,7 +9,7 @@ const ContactUs = () => {
     <Box id="Contactus">
       <Grid container spacing={3}>
         <Grid item xs={12} md={7}>
-          <Typography variant="h2" className="text-3xl font-bold">
+          <Typography variant="h2" fontSize={30} fontWeight={700}>
             Leave Us Your Info
           </Typography>
           <Stack
@@ -74,7 +74,7 @@ const ContactUs = () => {
         </Grid>
         {/* left side bar  */}
         <Grid item xs={12} md={5}>
-          <Typography variant="h2" className="text-3xl font-bold">
+          <Typography variant="h2" fontSize={30} fontWeight={700}>
             Contact Information
           </Typography>
           <Stack className="mt-12 mb-10 " spacing={3}>

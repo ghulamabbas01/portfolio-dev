@@ -10,7 +10,7 @@ const MyServices = () => {
   return (
     <Stack id="Services">
       <Stack className="mx-auto text-center " spacing={2}>
-        <Typography variant="h2" className="font-semibold text-4xl">
+        <Typography variant="h2" fontSize={36} fontWeight={600}>
           My Services
         </Typography>
         <Typography
