@@ -34,7 +34,7 @@ const MyServices = () => {
                   height={68}
                 />
                 <Stack spacing={1} className="text-center">
-                  <Typography variant="h4" className="text-lg font-medium">
+                  <Typography variant="h4" fontSize={18} fontWeight={500}>
                     {data?.name}
                   </Typography>
                   <Typography variant="body">{data?.description}</Typography>

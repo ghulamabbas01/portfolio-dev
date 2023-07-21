@@ -35,9 +35,7 @@ const Education = () => {
                 <Grid container>
                   <Grid item xs={12} md={4} className="bg-white">
                     <Stack spacing={2} className="p-4">
-                      <Typography
-                        variant="h4"
-                        className="text-[18px] font-[500]">
+                      <Typography variant="h4" fontSize={18} fontWeight={500}>
                         {data?.UniversityName}
                       </Typography>
                       <Typography variant="body1">
@@ -53,9 +51,7 @@ const Education = () => {
                   <Divider />
                   <Grid item xs={12} md={8}>
                     <Stack spacing={2} className="p-4">
-                      <Typography
-                        variant="h4"
-                        className="text-[18px] font-[500]">
+                      <Typography variant="h4" fontSize={18} fontWeight={500}>
                         {data?.field}
                       </Typography>
                       <Typography variant="body1" className="">

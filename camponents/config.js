@@ -45,7 +45,7 @@ export const ManuBar = [
   {
     id: 3,
     name: "Pricing",
-    Image: "/right-side-manu-Icon/pricing.png",
+    Image: "/right-side-manu-Icon/Pricing.png",
     link: "#Pricing",
   },
   {

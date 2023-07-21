@@ -3,8 +3,10 @@ import React from "react";
 import { Box, Grid, Stack, Typography, TextField, Button } from "@mui/material";
 // import next components 
 import Image from "next/image";
+import { useRouter } from "next/router";
 
 const ContactUs = () => {
+  const router = useRouter();
   return (
     <Box id="Contactus">
       <Grid container spacing={3}>
@@ -22,7 +24,6 @@ const ContactUs = () => {
                 className="input"
                 id="outlined-multiline-flexible"
                 name="name"
-                value="name"
                 placeholder="Full Name"
               />
             </Stack>
@@ -35,7 +36,6 @@ const ContactUs = () => {
                 id="outlined-multiline-flexible"
                 placeholder="Your Email"
                 name="email"
-                value="email"
               />
             </Stack>
             {/* Your Email  end  */}
@@ -47,7 +47,6 @@ const ContactUs = () => {
                 id="outlined-multiline-flexible"
                 placeholder="Subject"
                 name="subject"
-                value="subject"
               />
             </Stack>
             {/* Subject end  */}
@@ -58,7 +57,6 @@ const ContactUs = () => {
                 className="input"
                 id="outlined-multiline-static"
                 name="message"
-                value="message"
                 placeholder="Message"
                 multiline
                 rows={6}
@@ -66,9 +64,12 @@ const ContactUs = () => {
             </Stack>
             {/* Your Message end  */}
             <Box>
-              <Button className="bg-[#FFB400] text-black px-10 py-2 hover:bg-[#c28f18]">
-                send message
-              </Button>
+              <button
+                type="button"
+                onClick={() => router.replace("")}
+                className="bg-[#FFB400] font-medium text-black px-10 py-2 hover:bg-[#c28f18]">
+                Send Message
+              </button>
             </Box>
           </Stack>
         </Grid>

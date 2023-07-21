@@ -194,10 +194,10 @@ body{
 /* Testimonial css end  */
 /* uiDesign css start  */
 .MuiTabs-indicator{
-  background-color: #FFB400;
+  background-color: #FFB400 !important;
 }
 .css-1h9z7r5-MuiButtonBase-root-MuiTab-root.Mui-selected{
-  color: #FFB400;
+  color: #FFB400 !important;
 }
 .ui-main-box-text{
   display: none;

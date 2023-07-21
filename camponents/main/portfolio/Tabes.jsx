@@ -46,7 +46,7 @@ const Tabes = () => {
         <TabContext value={value}>
           <Box>
             <TabList onChange={handleChange} aria-label="lab API tabs example">
-              <Tab label="UI Design" value="1" />
+              <Tab label="UI Design" value="1" className="tabes" />
               <Tab label="Web Templates" value="2" />
               <Tab label="Logo" value="3" />
               <Tab label="Branding" value="4" />

@@ -75,7 +75,12 @@ const Testimonial = () => {
               </Typography>
             </Stack>
             <Stack className="flex-row items-center gap-6">
-              <Avatar src={data?.avatar} alt="avatar" className="w-20 h-20" />
+              <Avatar
+                src={data?.avatar}
+                alt="avatar"
+                className="w-20 h-20"
+                wi
+              />
               <Box className="flex items-center flex-col">
                 <Typography
                   variant="h4"
