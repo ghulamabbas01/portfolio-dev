@@ -45,7 +45,7 @@ const RightSidebar = () => {
             {soialIcon?.map((data) => (
               <Box key={data?.id}>
                 <Link
-                  href={`${data?.facebookUrl}`}
+                  href={`${data?.socialLink}`}
                   className="social-Icon"
                   target="_blank">
                   <Image

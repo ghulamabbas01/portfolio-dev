@@ -60,23 +60,28 @@ const Testimonial = () => {
         {TestimonialData?.map((data) => (
           <Stack
             spacing={4}
-            className="bg-white p-5 border-[1px]"
+            className="bg-white p-5 border-[1px] h-full"
             key={data?.id}>
             <Stack spacing={1.5}>
               <Rating size="large" />
-              <Typography variant="h4" className="text-[18px] font-[500]">
+              <Typography variant="h4" fontSize={18} fontWeight={600}>
                 {data?.work}
               </Typography>
-              <Typography variant="body1" className="text-[#767676]">
+              <Typography
+                variant="body1"
+                className="text-[#767676]"
+                fontSize={14}>
                 {data?.description}
               </Typography>
             </Stack>
             <Stack className="flex-row items-center gap-6">
               <Avatar src={data?.avatar} alt="avatar" className="w-20 h-20" />
-              <Box>
+              <Box className="flex items-center flex-col">
                 <Typography
                   variant="h4"
-                  className="text-[18px] font-[500] mb-1">
+                  fontSize={18}
+                  fontWeight={500}
+                  className="mb-1">
                   {data?.name}
                 </Typography>
                 <Typography variant="body1" className="text-[#767676]">
