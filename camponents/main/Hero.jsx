@@ -1,4 +1,5 @@
 import React from "react";
+// import next components 
 import Image from "next/image";
 // import material ui
 import { Stack, Typography, Box, Grid, Button } from "@mui/material";
