@@ -24,10 +24,9 @@ const WorkHistory = () => {
       {/* Education main heading  */}
       {/* if you change a your data please edit the config file  */}
       {/* EducationData  */}
-      <Box className="bg-white p-8 flex flex-col justify-center items-center">
+      <Box className="bg-white p-8 flex flex-col justify-center items-center ">
         <Grid container>
           <Grid item xs={12}>
-            <Divider light />
             {WorkHistoryData.map((data) => (
               <>
                 <Grid container>

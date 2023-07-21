@@ -1,4 +1,5 @@
 import React from "react";
+// import config file
 import { TestimonialData } from "./config";
 // import material ui
 import { Stack, Typography, Box, Rating, Avatar } from "@mui/material";
@@ -57,7 +58,10 @@ const Testimonial = () => {
       </Stack>
       <Slider {...settings}>
         {TestimonialData.map((data) => (
-          <Stack spacing={4} className="bg-white p-5" key={data.id}>
+          <Stack
+            spacing={4}
+            className="bg-white p-5 border-[1px]"
+            key={data.id}>
             <Stack spacing={1.5}>
               <Rating defaultValue={`${data.star}`} size="large" />
               <Typography variant="h4" className="text-[18px] font-[500]">

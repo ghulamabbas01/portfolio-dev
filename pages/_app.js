@@ -25,7 +25,9 @@ export default function App({ Component, pageProps }) {
           href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick-theme.min.css"
         />
       </Head>
-      <Component {...pageProps} />
+      <div className="App">
+        <Component {...pageProps} />
+      </div>
     </>
   );
 }

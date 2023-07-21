@@ -30,7 +30,6 @@ const Education = () => {
       <Box className="bg-white p-8 flex flex-col justify-center items-center">
         <Grid container>
           <Grid item xs={12}>
-            <Divider light />
             {EducationData.map((data) => (
               <>
                 <Grid container>
@@ -51,6 +50,7 @@ const Education = () => {
                       </Typography>
                     </Stack>
                   </Grid>
+                  <Divider />
                   <Grid item xs={12} md={8}>
                     <Stack spacing={2} className="p-4">
                       <Typography
@@ -64,7 +64,7 @@ const Education = () => {
                     </Stack>
                   </Grid>
                 </Grid>
-                <Divider light />
+                <Divider />
               </>
             ))}
           </Grid>

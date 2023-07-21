@@ -1,4 +1,5 @@
 import React from "react";
+// import next components 
 import Link from "next/link";
 import Image from "next/image";
 
@@ -9,7 +10,7 @@ import { ManuBar } from "../config";
 
 const index = () => {
   return (
-    <Stack sx={{ display: { xs: "none", md: "flex" } }}>
+    <Stack sx={{ display: { xs: "none", md: "flex" }, zIndex: 2 }}>
       {ManuBar.map((data) => (
         <Tooltip title={data.name} placement="top" arrow>
           <Link href={`${data.link}`}>

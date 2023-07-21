@@ -1,4 +1,5 @@
 import React from "react";
+// import next components 
 import Image from "next/image";
 // import material ui
 import { Stack, Typography, Box, Grid, Button } from "@mui/material";
@@ -24,7 +25,7 @@ const PricingPlane = () => {
           {PricingData.map((data) => (
             <Grid item xs={12} md={4} key={data.id}>
               <Stack
-                className="justify-center items-center px-8 bg-white pt-14 pb-7 relative h-full  shadow-md "
+                className="justify-center items-center px-8 bg-white pt-7 pb-7 relative h-full  shadow-sm border-[1px]"
                 spacing={3}>
                 <Typography
                   variant="body1"

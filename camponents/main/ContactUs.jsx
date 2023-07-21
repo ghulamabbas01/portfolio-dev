@@ -1,6 +1,7 @@
 import React from "react";
 // import matreial ui
 import { Box, Grid, Stack, Typography, TextField, Button } from "@mui/material";
+// import next components 
 import Image from "next/image";
 
 const ContactUs = () => {
@@ -11,14 +12,18 @@ const ContactUs = () => {
           <Typography variant="h2" className="text-3xl font-bold">
             Leave Us Your Info
           </Typography>
-          <Stack className="mt-12 bg-white px-7 py-[52px]" spacing={3}>
+          <Stack
+            className="mt-12 bg-white px-7 py-[52px] border-[1px] shadow-sm"
+            spacing={3}>
             {/* name textfield start */}
             <Stack spacing={2}>
               <Typography>Your Full Name ( Required)</Typography>
               <TextField
                 className="input"
                 id="outlined-multiline-flexible"
-                label="Full Name"
+                name="name"
+                value="name"
+                placeholder="Full Name"
               />
             </Stack>
             {/* name textfield end  */}
@@ -28,7 +33,9 @@ const ContactUs = () => {
               <TextField
                 className="input"
                 id="outlined-multiline-flexible"
-                label="Full Name"
+                placeholder="Your Email"
+                name="email"
+                value="email"
               />
             </Stack>
             {/* Your Email  end  */}
@@ -38,7 +45,9 @@ const ContactUs = () => {
               <TextField
                 className="input"
                 id="outlined-multiline-flexible"
-                label="Full Name"
+                placeholder="Subject"
+                name="subject"
+                value="subject"
               />
             </Stack>
             {/* Subject end  */}
@@ -48,7 +57,9 @@ const ContactUs = () => {
               <TextField
                 className="input"
                 id="outlined-multiline-static"
-                label="Message"
+                name="message"
+                value="message"
+                placeholder="Message"
                 multiline
                 rows={6}
               />
@@ -68,7 +79,7 @@ const ContactUs = () => {
           </Typography>
           <Stack className="mt-12 mb-10 " spacing={3}>
             {/* location box  */}
-            <Box className="flex flex-col justify-center items-center px-7 py-9 bg-white text-center">
+            <Box className="flex flex-col justify-center items-center px-7 py-9 bg-white text-center border-[1px] shadow-sm">
               {/* top icon  */}
               <Box className="w-10 h-10 bg-[#FFB400] flex justify-center rounded-full">
                 <Image
@@ -79,7 +90,7 @@ const ContactUs = () => {
                 />
               </Box>
               {/* text box  */}
-              <Stack spacing={2} className="mt-5 w-full">
+              <Stack spacing={2} className="mt-5 w-full ">
                 <Box className="flex justify-between">
                   <Typography variant="body1">Country:</Typography>
                   <Typography variant="body1">Bangladesh</Typography>
@@ -97,7 +108,7 @@ const ContactUs = () => {
             {/* location box end  */}
 
             {/* email box start  */}
-            <Box className="flex flex-col justify-center items-center px-7 py-9 bg-white text-center">
+            <Box className="flex flex-col justify-center items-center px-7 py-9 bg-white text-center border-[1px] shadow-sm ">
               {/* top icon  */}
               <Box className="w-10 h-10 bg-[#FFB400] flex justify-center rounded-full">
                 <Image
@@ -128,7 +139,7 @@ const ContactUs = () => {
             {/* email box end  */}
 
             {/* mobile box start  */}
-            <Box className="flex flex-col justify-center items-center px-7 py-9 bg-white text-center">
+            <Box className="flex flex-col justify-center items-center px-7 py-9 bg-white text-center border-[1px] shadow-sm">
               {/* top icon  */}
               <Box className="w-10 h-10 bg-[#FFB400] flex justify-center rounded-full">
                 <Image

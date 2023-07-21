@@ -13,11 +13,10 @@ import ContactUs from "./ContactUs";
 import GoogleMap from "./GoogleMap";
 import Brands from "./Brands";
 import Footer from "./Footer";
-// import BlogList from "./blogs/BlogList";
 
 const index = () => {
   return (
-    <Stack className="main-component" spacing={9}>
+    <Stack className="main-component  mx-4 " mt={{ md: 0, xs: 7 }} spacing={9}>
       <Hero />
       <MyServices />
       <PricingPlane />

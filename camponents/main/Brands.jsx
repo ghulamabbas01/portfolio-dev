@@ -1,5 +1,7 @@
 import React from "react";
+// import material ui 
 import { Box, Grid, Stack } from "@mui/material";
+// import next components 
 import Image from "next/image";
 const Brands = () => {
   return (

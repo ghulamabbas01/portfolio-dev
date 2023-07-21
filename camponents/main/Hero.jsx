@@ -2,14 +2,15 @@ import React from "react";
 import Image from "next/image";
 // import material ui
 import { Stack, Typography, Box, Grid, Button } from "@mui/material";
-// material icons
-import ArrowRightAltRoundedIcon from "@mui/icons-material/ArrowRightAltRounded";
 
 const Hero = () => {
   return (
-    <Box className="Hero-component ">
-      <Grid container spacing={2} className="justify-center items-center md:py-0 py-10">
-        <Grid item xs={12} md={8} >
+    <Box className="Hero-component md:h-[450px]">
+      <Grid
+        container
+        spacing={2}
+        className="justify-center items-center py-10 ">
+        <Grid item xs={12} md={8}>
           <Stack spacing={3} className="profile-text">
             <Typography variant="h1" className="text-5xl font-semibold">
               I'm Ghulam Abbas <br />
@@ -28,8 +29,20 @@ const Hero = () => {
             <Box>
               <Button
                 variant="contained"
-                className="px-8 py-4 bg-[#FFB400] hover:bg-[#cf9817] text-lg text-black"
-                endIcon={<ArrowRightAltRoundedIcon />}>
+                className="px-8 py-4 bg-[#FFB400] hover:bg-[#cf9817] font-semibold text-xl text-black"
+                endIcon={
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="32"
+                    height="32"
+                    viewBox="0 0 32 32"
+                    fill="none">
+                    <path
+                      d="M17.07 16.363L11.414 22.021L10 20.606L15.657 14.95L10.707 10H22.02V21.313L17.07 16.363Z"
+                      fill="black"
+                    />
+                  </svg>
+                }>
                 HIRE ME
               </Button>
             </Box>
