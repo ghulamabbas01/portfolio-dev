@@ -13,7 +13,7 @@ const Hero = () => {
         className="justify-center items-center py-10 ">
         <Grid item xs={12} md={8}>
           <Stack spacing={3} className="profile-text">
-            <Typography variant="h1" className="text-5xl font-semibold">
+            <Typography variant="h1" fontSize={48} fontWeight={600}>
               I'm Ghulam Abbas <br />
               <Box
                 component="span"
@@ -29,7 +29,6 @@ const Hero = () => {
             </Typography>
             <Box>
               <Button
-                variant="contained"
                 className="px-8 py-4 bg-[#FFB400] hover:bg-[#cf9817] font-semibold text-xl text-black"
                 endIcon={
                   <svg
