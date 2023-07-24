@@ -47,7 +47,7 @@ export default function Home() {
               fontSize={24}
               fontWeight={600}
               letterSpacing={2}>
-              Ghulam Abbas
+              Organized Web
             </Typography>
           </Box>
           <Box>

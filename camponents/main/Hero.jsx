@@ -12,15 +12,15 @@ const Hero = () => {
     <Box className="Hero-component md:h-[450px]">
       <Grid
         container
-        spacing={2}
-        className="justify-center items-center py-10 ">
+        // spacing={2}
+        className="justify-center items-center ">
         <Grid item xs={12} md={8}>
           <Stack spacing={3} className="profile-text">
-            <Typography variant="h1" fontSize={48} fontWeight={600}>
+            <Typography variant="h1" fontSize={40} fontWeight={600}>
               I'm Ghulam Abbas <br />
               <Box
                 component="span"
-                className="text-5xl font-semibold text-[#FFB400]">
+                className="text-[40px] font-semibold text-[#FFB400]">
                 Front-end{" "}
               </Box>
               Developer

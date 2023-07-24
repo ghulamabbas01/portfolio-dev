@@ -101,10 +101,10 @@ body{
 
   }
   .MuiTooltip-popper[data-popper-placement*="top"] .css-1k51tf5-MuiTooltip-tooltip{
-  margin-bottom: 0px;
+  margin-bottom: 0px !important;
   }
 .MuiTooltip-arrow{
-  color: black;
+  color: black !important;
 }
 /* right sidebar css end  */
 
@@ -121,7 +121,7 @@ body{
   justify-content: center !important;
   align-items: center !important;
   width: 100%;
-  padding: 0px 60px;
+  padding: 0px 70px;
   box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
 }
 
