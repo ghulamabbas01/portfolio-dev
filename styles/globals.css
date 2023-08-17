@@ -97,7 +97,7 @@ body{
 }
 
 .MuiTooltip-tooltip{
-  background-color: black;
+  background-color: black !important;
 
   }
   .MuiTooltip-popper[data-popper-placement*="top"] .css-1k51tf5-MuiTooltip-tooltip{

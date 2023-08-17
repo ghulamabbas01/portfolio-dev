@@ -6,6 +6,7 @@ export default function App({ Component, pageProps }) {
   return (
     <>
       <Head>
+        {/* favicons  */}
         <link
           rel="apple-touch-icon"
           sizes="180x180"
@@ -23,7 +24,9 @@ export default function App({ Component, pageProps }) {
           sizes="16x16"
           href="/favicon-16x16.png"
         />
-        <title>Organized Web | Personal Porfolio HTML Template</title>
+        <link rel="manifest" href="/site.webmanifest" />
+        {/* favicons  */}
+
         <meta
           name="description"
           content="Discover the Organized Web Personal Portfolio HTML Template - Your Gateway to a Stunning Online Portfolio! Ideal for Showcasing Your Creativity."
@@ -52,6 +55,7 @@ export default function App({ Component, pageProps }) {
           type="text/css"
           href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick-theme.min.css"
         />
+        <title>Organized Web | Personal Porfolio HTML Template</title>
       </Head>
       <div className="App">
         <Component {...pageProps} />
